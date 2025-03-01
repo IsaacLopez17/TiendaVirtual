@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   background:lightyellow;
+   height: 3100px; /* TAMAÑO TOTAL DE LA PAGINA*/
+   overflow-x: hidden;
+   width: 100vw
+}
+
+img {
+   max-width: 100%;
+}
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.header {
+   display: flex; 
+   align-items: center;
+   background-color: #91DDD8;
+   padding: 130px 0 0 0;
+   height: 720px;
+}
+
+.menu {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.menu .navbar ul li {
+   position: relative;
+   float: left;
+}
+
+.menu .navbar ul li a {
+   font-size: 18px;
+   padding: 20px;
+   color: black;
+   display: block;
+}
+
+.header-content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+.header-txt {
+   flex-basis: 50%;
+   margin-right: 25px;
+   
+}
+
+
+.header-txt h1 {
+   font-size: 50px;
+   text-transform: capitalize;
+   line-height: 1;
+   color: blue;
+   margin-bottom: 35px;
+   margin-top:-50px;
+}
+
+.header-txt p {
+   font-size:24px;
+   color: #515557;
+   margin-bottom: 35px;
+   font-family: 'Times New Roman', Times, serif;
+   margin-top: -20px;
+   font-weight: bold;
+}
+
+
+.footer {
+  background-color: 
+  #000000;
+  padding: 50px 0;
+  margin-top: -490px; /*ESTO ES CLAVE PARA SUBIR EL FOOTER AL FINAL CUANDO SE
+                        AGREGUE O QUITE PRODUCTOS*/
+  height: 500px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.link h3 {
+  color: #FFFFFF;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+
+
+.link a {
+  color: lightblue;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.link a:hover {
+  color: #9BCE21;
+}
+
+
+
+/*para los iconos redes sociales - INICIO*/
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  right: 1px;
+  transform: translateY(-50%);
+  position: relative;
+  margin-left: 1540px;
+  margin-top: -1530px; /*IMPORTANTE PARA MOVER EN LINEA HORIZONTAL LA POSICION DE ICONOS*/
+  bottom: 4000px; /*7650 ES SU ANTIGUA MEDIDA, PERO COMO CAMBIAMOS LOS PRODUCTOS
+                  SE MODIFICO ACA TAMBIEN , AL EXISTIR MENOS PRODUCTOS , SE REDUJO DE 7650 A 4K*/ 
+
+}
+
+.social-icon {
+  display: inline-block;
+  width: 90px;
+  height: 80px;
+  margin-right: 1px; /* Espacio entre los íconos */
+  text-align: center;
+  line-height: 100px;
+  background-color: #333;
+  color: #fff;
+  transition: transform 0.3s;
+  border-radius: 20px;
+}
+
+.social-icon i {
+  font-size: 50px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.instagram {
+  background-color: #c32aa3;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/*Menu desplegable*/
+
+.menu_desplegable{
+  list-style: none;
+  padding: 30px;/*para mover y centrar el texto*/
+  width: 100%;
+  max-width: 2300px;
+  font-size: 60px;
+}
+
+.menu_desplegable li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.menu_desplegable li {
+  display: inline-block;
+  text-align: center;
+ 
+}
+
+.menu_desplegable li a:hover{
+  background: #91DDD8;
+}
+
+.navbar {
+  background: #DC7633;
+  position: absolute;
+  right: -70px;
+  top: -20px;
+  height: 100px;
+  width:800px;
+  border-radius: 20px;
+}
+
+/*PARA EL LOGO AL LADO DEL NAVBAR*/
+
+.logo-imagen:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0,255,0,1) ;
+
+}
+
+.logo-imagen {
+  width: 200px; /* ajusta el tamaño según tus necesidades */
+  height: 100px; /* mantiene la proporción de la imagen */
+  margin-right: 10px; /* espacio entre la imagen y la barra de navegación */
+  border-radius: 20px;
+}
+
+/*CARRUSEL*/
+
+.container_carrusel{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  
+  margin-right: -100px;
+  margin-left: 80px;
+  margin-top: 120px;
+  position: relative;/*cambio para boton*/
+}
+
+.slide {
+  width:100%;
+  max-width: 12000px;
+  height: 720px; /* Ajusta según sea necesario */ /*CAMBIO*/
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;/*CAMBIO PARA PUNTO*/
+}
+
+.slide ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 500%; /* TRATANDO DE SOLUCIONAR PROBLEMA IMAGENES */
+  animation: slide 9s infinite cubic-bezier(0.25, 0.1 , 0.25 , 1);
+
+  transition: transform 0.5s ease-in-out; /*CAMBIO PARA PUNTO*/
+}
+
+
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  15% {margin-left: 0;}
+
+  20% {margin-left: -100%;}
+  35% {margin-left: -100%;}
+
+  40% {margin-left: -200%;}
+  55% {margin-left: -200%;}
+
+  60% {margin-left: -300%;}
+  75% {margin-left: -300%;}
+
+  80% {margin-left: -400%;}
+  100% {margin-left: -400%;}
+}
+
+/*cambio para punto*/
+.slide img {
+  width: 550%;
+  height: 530px;
+  object-fit: cover;
+  /*transition: transform 0.5s ease;*/
+}
+
+
+/* Ajuste para sincronizar el punto con la imagen */
+/*.slide img {
+  width: 100%; /* ACAAAAAAAAAAAAAAAAAAAA SE CAMBIAAAA PARA LAS IMGS*/
+  /*height: 530px;
+  object-fit: cover;
+  /*transition: transform 0.5s ease; /* Añadido para la transición suave */
+  /*position: relative;*/
+
+
+.slide ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  width: 500%; /*IMPORTANTE PARA TAMAÑO IMAGENES, CUANDO AGREGAS OTRA*/
+  animation: slide 15s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: transform 0.5s ease-in-out; /* Ajustado a 0.5 segundos para sincronizar con la transición de los puntos */
+
+}
+
+/* CHAT GPT*/
+slide ul li {
+  width: 100%; /* Ocupa el 100% del ancho de la diapositiva */
+  flex: 0 0 100%; /* Garantiza que no se comprima ni estire */
+}
+
+
+/*PUNTOS CARRUSEL*/
+
+ul.slider_carrusel li:target {
+  opacity: 1;
+}
+
+.menu_puntos_carrusel {
+  text-align: center;
+  /*position: relative;
+   top: -170px;*/
+   position: absolute;
+   bottom: 130px; /*determina la altura de los puntos y el carrusel , el height*/
+   width: 100%;
+}
+
+.menu_puntos_carrusel li {
+  display: inline-block;
+  /*margin-top: 10px;*/
+  margin: 0 5px; /*determina la distancia entre los puntos*/
+}
+
+.menu_puntos_carrusel li a {
+  display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    line-height:15px; /* Ajusta la altura de línea para centrar verticalmente el número */
+    font-size: 20px;
+    border-radius: 50%;
+
+}
+
+
+/*NUEVOOOOO - CHAT GPT*/
+
+
+
+
+/*UNIR EL ARCHIVO HTML - NOSOTROS*/
+#nosotros {
+  margin-top: 80px;
+  width:40%;
+  height: 30%;
+  margin-left: 100px;
+  margin-right: 200px;
+  padding-bottom: 100px;
+  
+}
+
+#nosotros img {
+  display: block;
+    margin-top: 30px ;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: 100%;
+}
+
+#services-frame {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  border: none;
+  border-radius: 30px;
+}
+
+/*UNIR EL ARCHIVO HTML - UBICANOS */
+#ubicanos {
+  margin-top: -925px;
+  width:40%;
+  height: 20%;
+  margin-left: 940px;
+  margin-right: 200px;
+  padding-bottom: 100px;
+  
+}
+
+#ubicanos img {
+  display: block;
+    margin-top: 30px ;
+    /*max-width: 100%;*/
+    max-height: 100%;
+    height: auto;
+    width: 100%;
+}
+
+#services-frame {
+  width: 100%;
+  height: 130vh; /*ACA CAMBIAMOS EL TAMAÑO ALTO DE TODO EL CONTENEDOR VERDE*/
+  overflow-y: scroll;
+  border: none;
+  border-radius: 30px;
+}
+
+/*UNIR EL ARCHIVO SLIDER OPINION CLIENTE*/
+
+#services-frame_slider_opinion_cliente {
+  width: 100%;
+  height: 60vh;
+  margin-top: 500px;
+}
+
+
+
+/*UNIR EL ARCHIVO DE TIENDA PRODUCTOS */
+/*NO OLVIDAR CAMBIAR EL SERVICES - FRAME YA QUE ES 1 TIENDA Y ES DISTINTO A LOS OTROS 2 */
+
+#tienda {
+  margin-top: 10px;
+  width:100%;
+  height: 100%;
+  margin-left: 00px;
+  margin-right: 0px;
+  padding-bottom: 100px;
+  
+}
+
+#ubicanos img {
+  display: block;
+    margin-top: 30px ;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: 100%;
+}
+
+#services-frame_tienda {
+  width: 100%;
+  height: 87%;
+  /* overflow-y: scroll;
+  border: none; */
+  border-radius: 30px;
+}

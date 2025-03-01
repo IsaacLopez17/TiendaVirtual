@@ -1,0 +1,238 @@
+/* Estilos CSS para dar formato a la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: lightsteelblue; /* Color verde de fondo */
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  overflow-y: hidden; /* Evita el desplazamiento vertical */
+  
+}
+
+h1 {
+  color: #0000FF;
+  position: relative;
+  margin-left: 320px;
+}
+
+p.payment-heading {
+  position: absolute;
+  top: -43px;
+  right: 280px;
+  color: #669933;
+  font-size: 20px;
+}
+
+.div_hacer_fila_4 {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  height: 10vh;
+  
+  
+}
+
+.div-sections{
+  display: flex;
+  flex-direction: row;
+}
+
+.product-container {
+  width: calc(25% - 20px); /* Ancho del contenedor para mostrar 4 por fila */
+  margin-right: 0; /* Eliminamos el margen derecho */
+  margin-bottom: 20px; /* Añadimos un margen inferior para separar las filas */
+
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: 380px; /* Ajusta la altura según tus necesidades */
+  background-color: #CACFD2; /* Cambia el color de fondo según tus necesidades */
+  border: 5px solid red; /* Añade bordes según tus necesidades */
+  padding: 10px; /* Añade relleno según tus necesidades */
+  margin: 10px; /* Ajusta el margen según tus necesidades */
+  border-radius: 20px;
+  margin-top: 80px;
+  
+
+  }   
+
+ 
+
+.product {
+  margin: 20px;
+  text-align: center;
+  
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  margin-top: -20px;
+  margin-left: -20px;
+  /*mix-blend-mode: multiply; */ /* Esta propiedad combina el contenido del contenedor con el fondo */
+
+}
+
+.product p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.product button {
+  background-color: darkgreen;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+.product button:hover {
+  background-color: #45a049;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-top: 10px;
+  color: rgb(42, 164, 216);
+}
+
+.cart {
+  position: absolute;
+  top: 80px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top:80px;
+  margin-left: 1280px;
+  border-radius: 20px;
+  border-color: orange;
+  border-width: 5px;
+}
+.cart h2 {
+  margin-top: 0;
+}
+.cart-item {
+  margin-bottom: 10px;
+}
+.cart-total {
+  text-align: right;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+#search-container {
+  position: absolute;
+  /* Establece la posición absoluta */
+  top: 4%;
+  /* Ajusta la distancia desde la parte superior */
+  left: 7%;
+  /* Ajusta la distancia desde la izquierda */
+  transform: translate(-50%, -50%);
+  /* Centra el contenedor */
+  border: 5px solid blue;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.payment-container {
+  position: absolute;
+  margin-top: 220px;
+  left: 1400px;
+  height: 3000px; /* Ajusta la altura del contenedor */
+}
+
+
+
+.payment-image {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.right-text {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+  color: #1094F6; /* Cambia el color del texto a rojo */
+  font-size: 25px;
+}
+
+.social-icon {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-right: 1px; /* Espacio entre los íconos */
+        text-align: center;
+        line-height: 50px;
+        background-color: #333;
+        color: #fff;
+        transition: transform 0.3s;
+        font-size: 30px;
+    }
+
+    .whatsapp {
+        background-color: #25D366;
+    }
+
+     /*MODIFICAR ACA PARA MOVER SU POSICION*/
+     .contenedor-metodos-pago {
+      position: absolute ;
+      display: inline-block;
+      top: 140px; 
+      left: 1100px;
+  }
+
+    /* Estilos para el menú desplegable */
+    .metodos-pago {
+      text-align: right; /* Alinea los métodos de pago a la derecha */
+        margin-right: 270px; /* Ajusta la distancia desde el borde derecho */
+        position: relative;
+        display: inline-block;
+        margin-left: -50px;
+        font-size: 25px;
+        
+    }
+
+    .metodos-pago-select {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        min-width: 200px; /* Ajusta el ancho mínimo del contenedor de métodos de pago según sea necesario */
+      max-width: 300px;
+      
+    }
+
+    .metodos-pago-select a {
+        padding: 0px ;
+        display: block;     
+    }
+
+    /* .metodos-pago:hover .metodos-pago-select {
+        display: block;
+    } */
+   
+
+    .metodos-pago-select img {
+    width: 100%; /* Ajusta el ancho de las imágenes de método de pago para llenar el contenedor */
+    height: 210px; /* Mantiene la proporción original de las imágenes */
+    width: 230px;
+    
+  }
+
+  
+ /*CARRITO DE COMPRAS IMAGEN*/
+
+ .img-carrito-compras {
+  width: 70px; /* Ajusta el ancho según tus necesidades */
+  height: 70px; /* Altura automática para mantener la proporción */
+  position: fixed; /* Posición fija para mantenerla en una ubicación específica */
+  top: 90px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+  right: 400px; /* Ajusta la distancia desde la derecha según tus necesidades */
+  /*z-index: 1000; /* Ajusta el índice z para que esté por encima de otros elementos */
+}

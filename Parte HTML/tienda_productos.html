@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Producto - Ayuda</title>
+    <link rel="stylesheet" href="../Parte CSS/tienda_productos.css">
+
+</head>
+<body>
+    
+    <h1>Tienda de productos <span class="right-text"> Elige tus productos  -  Realiza el pago  -  Contáctanos : <a href="https://web.whatsapp.com/" class="social-icon whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a> </span></h1>
+
+    <!-- Agrega el campo de búsqueda -->
+    <div id="search-container">
+      <input type="text" id="search" oninput="buscarProductos()" placeholder="Buscar productos...">
+    </div>
+
+    <!-- Contendor de productos y cart INICIO-->
+    <main class="div-sections">
+
+      <!--Contenedor de todos los productos GRiD -->
+      <div class="div_hacer_fila_4">
+
+        <div class="product-container">
+          <div class="product">
+              <img src="img/img1_arroz_superior_25kg.png" alt="Producto 1">
+              <div class="product-name">Arroz Superior 25kg (saco)</div>
+              <p>Precio: S/85.00</p>
+              <button onclick="agregarAlCarrito('Arroz Superior 25kg (saco)', 85.00)">Agregar al carrito</button>
+          </div>
+      </div>
+
+      <div class="product-container">
+    <div class="product">
+      <img src="img/img2_lentejasSELECTAS.jpg" alt="Producto 2">
+      <div class="product-name">Lentejas Selectas 10 bolsas de 1 kg (paquete)</div>
+      <p>Precio: S/70.00</p>
+      <button onclick="agregarAlCarrito('Lentejas Selectas 10 bolsas de 1 kg (paquete)', 70.00)">Agregar al carrito</button>
+    </div>
+    </div>
+
+    <div class="product-container">
+    <div class="product">
+      <img src="img/img3_frijolesMarrones.jpg" alt="Producto 3">
+      <div class="product-name">Frijoles Marrones 10 bolsas de 1 kg (paquete)</div>
+      <p>Precio: S/75.00</p>
+      <button onclick="agregarAlCarrito('Frijoles Marrones', 75.00)">Agregar al carrito</button>
+    </div>
+    </div>
+
+
+    <div class="product-container">
+    <div class="product">
+      <img src="img/img4_quinua500g.jpg" alt="Producto 4">
+      <div class="product-name">Quinua Premium 12 bolsas de 500 g (caja)</div>
+      <p>Precio: S/140.00</p>
+      <button onclick="agregarAlCarrito('Quinua Premium', 140.00)">Agregar al carrito</button>
+    </div>
+    </div>
+
+    <div class="product-container">
+      <div class="product">
+        <img src="img/img5_aceiteVegetal.jpg" alt="Producto 7">
+        <div class="product-name">Aceite Vegetal 12 botellas de 1 litro (caja) </div>
+        <p>Precio: S/120.00</p>
+        <button onclick="agregarAlCarrito('Aceite Vegetal', 120.00)">Agregar al carrito</button>
+      </div>
+      </div>
+  
+
+      <div class="product-container">
+      <div class="product">
+        <img src="img/img6_Aceite-6Botellas500Ml.jpg" alt="Producto 1">
+        <div class="product-name">Aceite de Oliva Virgen 6 botellas de 500 ml (caja)</div>
+        <p>Precio: S/135.00</p>
+        <button onclick="agregarAlCarrito('Aceite de Oliva Virgen', 135.00)">Agregar al carrito</button>
+      </div>
+      </div>
+  
+
+      <div class="product-container">
+      <div class="product">
+        <img src="img/img7_AzucarBlanca3.png" alt="Producto 1">
+        <div class="product-name">Azúcar Blanca Refinada 2 bolsas de 25 kg (saco)</div>
+        <p>Precio: S/180.00</p>
+        <button onclick="agregarAlCarrito('Azúcar Blanca', 180.00)">Agregar al carrito</button>
+      </div>
+      </div>
+
+
+      <div class="product-container">
+      <div class="product">
+          <img src="img/img8_SalYodada.png" alt="Producto 1">
+          <div class="product-name">Sal yodada 20 bolsas de 1 kg (caja)</div>
+          <p>Precio: S/70.00</p>
+          <button onclick="agregarAlCarrito('Sal yodada', 70.00)">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="product-container">
+          <div class="product">
+            <img src="img/img9_HarinaTrigo2.png" alt="Producto 7">
+            <div class="product-name">Harina de Trigo Especial 10 bolsas de 1 kg (paquete)</div>
+            <p>Precio: S/55.00</p>
+            <button onclick="agregarAlCarrito('Harina de Trigo Especial ', 55.00)">Agregar al carrito</button>
+          </div>
+          </div>
+      
+    
+          <div class="product-container">
+          <div class="product">
+            <img src="img/img10_FideosSpaghetti.png" alt="Producto 1">
+            <div class="product-name">Fideos Spaghetti 20 paquetes de 500 g (caja)</div>
+            <p>Precio: S/80.00</p>
+            <button onclick="agregarAlCarrito('Fideos Spaghetti', 80.00)">Agregar al carrito</button>
+          </div>
+          </div>
+      
+    
+          <div class="product-container">
+          <div class="product">
+            <img src="img/img11_HarinaMaiz.png" alt="Producto 1">
+            <div class="product-name">Harina de Maíz Amarillo 5 bolsas de 2 kg (paquete)</div>
+            <p>Precio: S/65.00</p>
+            <button onclick="agregarAlCarrito('Harina de Maíz Amarillo', 65.00)">Agregar al carrito</button>
+          </div>
+          </div>
+    
+    
+          <div class="product-container">
+          <div class="product">
+              <img src="img/img12_PechugaPollo.png" alt="Producto 1">
+              <div class="product-name">Pechuga de Pollo 10 kg (caja congelada)</div>
+              <p>Precio: S/125.00</p>
+              <button onclick="agregarAlCarrito('Pechuga de Pollo', 125.00)">Agregar al carrito</button>
+            </div>
+            </div>
+          
+            <div class="product-container">
+     
+              <div class="product">
+                <img src="img/img13_CarneMolida.png" alt="Producto 7">
+                <div class="product-name">Carne Molida de Res 5 kg (paquete congelado)</div>
+                <p>Precio: S/100.00</p>
+                <button onclick="agregarAlCarrito('Carne Molida', 100.00)">Agregar al carrito</button>
+              </div>
+              </div>
+          
+        
+              <div class="product-container">
+              <div class="product">
+                <img src="img/img14_ChuletaCerdo.png" alt="Producto 1">
+                <div class="product-name">Chuletas de Cerdo 10 kg (caja congelada)</div>
+                <p>Precio: S/165.00</p>
+                <button onclick="agregarAlCarrito('Chuletas de Cerdo', 165.00)">Agregar al carrito</button>
+              </div>
+              </div>
+          
+        
+              <div class="product-container">
+              <div class="product">
+                <img src="img/img15_LecheEvaporada.png" alt="Producto 1">
+                <div class="product-name">Leche Evaporada 48 latas de 400 ml (caja)</div>
+                <p>Precio: S/192.00</p>
+                <button onclick="agregarAlCarrito('Leche Evaporada', 192.00)">Agregar al carrito</button>
+              </div>
+              </div>
+        
+        
+              <div class="product-container">
+              <div class="product">
+                  <img src="img/img16_QuesoFresco.png" alt="Producto 1">
+                  <div class="product-name">Queso Fresco 5 bloques de 2 kg (paquete)</div>
+                  <p>Precio: S/220.00</p>
+                  <button onclick="agregarAlCarrito('Queso Fresco', 220.00)">Agregar al carrito</button>
+                </div>
+                </div>
+
+                <div class="product-container">
+                  <div class="product">
+                    <img src="img/img17_MantequillaSinSal.png" alt="Producto 7">
+                    <div class="product-name">Mantequilla sin sal 12 bloques de 250 g (caja)</div>
+                    <p>Precio: S/108.00</p>
+                    <button onclick="agregarAlCarrito('Mantequilla sin sal', 108.00)">Agregar al carrito</button>
+                  </div>
+                  </div>
+              
+            
+                  <div class="product-container">
+                  <div class="product">
+                    <img src="img/img18_PlatanosSeda.png" alt="Producto 1">
+                    <div class="product-name">Plátanos de Seda 20 kg (caja)</div>
+                    <p>Precio: S/80.00</p>
+                    <button onclick="agregarAlCarrito('Platanos de Seda', 80.00)">Agregar al carrito</button>
+                  </div>
+                  </div>
+              
+            
+                  <div class="product-container">
+                  <div class="product">
+                    <img src="img/img19_NaranjasJugo.png" alt="Producto 1">
+                    <div class="product-name">Naranjas para jugo 15 kg (caja)</div>
+                    <p>Precio: S/75.00</p>
+                    <button onclick="agregarAlCarrito('Naranjas para jugo', 75.00)">Agregar al carrito</button>
+                  </div>
+                  </div>
+            
+            
+                  <div class="product-container">
+                  <div class="product">
+                      <img src="img/img20_PapaAmarilla.png" alt="Producto 1">
+                      <div class="product-name">Papas Amarillas 25 kg (saco)</div>
+                      <p>Precio: S/150.00</p>
+                      <button onclick="agregarAlCarrito('Papas amarillas', 150.00)">Agregar al carrito</button>
+                    </div>
+                    </div>
+
+                    
+ <!--Contenedor de todos los productos GRiD -->
+
+  <img src="img/carrito_compras.png" alt="Carrito de Compras Imagen" class="img-carrito-compras">
+
+    <div class="cart">
+      <h2>Carrito de compras</h2>
+      <div id="cart-items"></div>
+      <div class="cart-total">Total: <span id="cart-total">0.00</span></div>
+    </div>
+
+        <div class="contenedor-metodos-pago">
+
+          <div class="metodos-pago">
+            <p onclick="toggleMetodosPago()">Métodos de pago <i class="fas fa-caret-down"></i></p>
+            <div class="metodos-pago-select" id="metodosPagoSelect">
+          <a href="#"><img src="img/metodo_pago_yape.jpg" alt="Pagos Yape"> </a>
+          <a href="#"><img src="img/metodo_pago_bancoNacion.jpg" alt="Pagos Banco Nacion"> </a>
+      <!--   <a href="#"><img src="img/pagos_yape_plin_QR.jpg" alt="Visa"> Yape o Plin</a>   -->
+        </div>
+        </div>
+
+    </main>
+    <!-- Contendor de productos y cart FIN-->
+
+
+    <!--SCRIPT PARA QUE AL DAR CLICK MUESTRE LOS METODOS DE PAGOA-->
+    <script>
+      function toggleMetodosPago() {
+        var metodosPagoSelect = document.getElementById("metodosPagoSelect");
+        if (metodosPagoSelect.style.display === "none") {
+          metodosPagoSelect.style.display = "block";
+        } else {
+          metodosPagoSelect.style.display = "none";
+        }
+      }
+      </script>
+
+
+<!-- SCRIPT -->
+  <script src="../Parte JS/tienda_productos.js"></script>
+
+</body>
+</html>
